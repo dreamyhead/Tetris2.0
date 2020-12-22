@@ -33,11 +33,8 @@ void GameField::Draw(Canvas& canvas)
 		for (size_t x = 0; x < m_Field[y].size(); x++)
 		{
 			canvas.SetChar(x + 1, y + 1, m_Field[y][x]);
-			
 		}
 	}
-
-	
 }
 
 bool GameField::HasCollision(const Figure& figure)

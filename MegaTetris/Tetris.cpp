@@ -62,7 +62,7 @@ void Tetris::Update(double dt)
             m_End = true;
             system("cls");
             cout << "GAME OVER" << endl;
-            
+            cin.get();
         }
     }
     m_Canvas.Clear();
