@@ -1,7 +1,6 @@
 #include "Game.h"
 #include <iostream>
 #include <conio.h>
-#include "FPS.h"
 
 
 Game::Game()
@@ -14,7 +13,6 @@ void Game::Run()
 	Time last = Clock::now();
 	while (!End())
 	{
-		FPS fps;
 
 		if (_kbhit())
 		{
