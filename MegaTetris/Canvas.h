@@ -15,7 +15,6 @@ public:
 	~Canvas();
 
 	void SetChar(int x, int y, wchar_t c);
-	void Rect(COLORREF color, int x, int y);
 	wchar_t GetChar(int x, int y);
 	void Resize(int height, int width);
 	void Render();

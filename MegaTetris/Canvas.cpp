@@ -82,20 +82,6 @@ void Canvas::SetChar(int x, int y, wchar_t c)
 	m_Buffer[idx].Attributes = FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED;
 }
 
-void Canvas::Rect(COLORREF color, int x, int y)
-{
-	HPEN hPen = CreatePen(PS_SOLID, 1, color);//установка пера
-
-	HBRUSH hBrush = GetStockBrush(NULL_BRUSH);
-
-	SelectObject(hDC, hPen);
-	SelectObject(hDC, hBrush);
-
-	Rectangle(hDC, x, y, x + 30, y + 30);
-
-	DeleteObject(hBrush);
-	DeleteObject(hPen);
-}
 
 wchar_t Canvas::GetChar(int x, int y)
 {
